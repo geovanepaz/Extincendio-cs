@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active">@Html.ActionLink("HOME", "Index", "Home")</li>
+
+            <li role="presentation" class="dropdown">
+                <a id="menu" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Cadastrar <span class="caret"></span>
+                    <ul class="dropdown-menu">
+                        <li role="presentation"><a href="/usuario/cadastrar" id="IncluirUsuario">Usuario</a></li>
+                        <li role="presentation">@Html.ActionLink("Produto", "Create", "Produto")</li>
+                        <li role="presentation">@Html.ActionLink("Cliente", "Create", "Cliente")</li>
+                    </ul>
+            </li>
+
+            <li role="presentation" class="dropdown">
+                <a id="menu" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Pesquisar <span class="caret"></span>
+                    <ul class="dropdown-menu">
+                        <li role="presentation"><a href="/usuario/pesquisar" id="listarUsuario">Usuario</a></li>
+                        <li role="presentation">@Html.ActionLink("Produto", "Index", "Produto")</li>
+                        <li role="presentation">@Html.ActionLink("Cliente", "Search", "Cliente")</li>
+                        <li role="presentation"><a href="/venda/pesquisar" id="listarCliente">Vendas</a></li>
+                    </ul>
+            </li>
+            <li role="presentation"><a href="/venda/vender" id="sair">Vender</a></li>
+            <li role="presentation"><a href="/" id="sair">Sair</a></li>
+            </li>
+        </ul>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - By Geovane Tecnologia</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

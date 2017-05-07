@@ -1,0 +1,12 @@
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\bin\Debug\Extincendio.Infra.Data.dll.config
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\bin\Debug\Extincendio.Infra.Data.dll
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\bin\Debug\Extincendio.Infra.Data.pdb
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\bin\Debug\EntityFramework.dll
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\bin\Debug\Extincendio.Domain.dll
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\bin\Debug\Extincendio.Domain.pdb
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\bin\Debug\EntityFramework.xml
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\obj\Debug\Extincendio.Infra.Data.csprojResolveAssemblyReference.cache
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\obj\Debug\Extincendio.Infra.Data.dll
+C:\ASP.MVC\Extincendio\Extincendio.Infra.Data\obj\Debug\Extincendio.Infra.Data.pdb

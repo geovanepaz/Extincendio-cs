@@ -1,0 +1,5 @@
+C:\ASP.MVC\Extincendio\Extincendio.Domain\bin\Debug\Extincendio.Domain.dll
+C:\ASP.MVC\Extincendio\Extincendio.Domain\bin\Debug\Extincendio.Domain.pdb
+C:\ASP.MVC\Extincendio\Extincendio.Domain\obj\Debug\Extincendio.Domain.dll
+C:\ASP.MVC\Extincendio\Extincendio.Domain\obj\Debug\Extincendio.Domain.pdb
+C:\ASP.MVC\Extincendio\Extincendio.Domain\obj\Debug\Extincendio.Domain.csprojResolveAssemblyReference.cache

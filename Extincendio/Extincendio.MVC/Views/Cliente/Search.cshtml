@@ -1,0 +1,143 @@
+﻿@model IEnumerable<Extincendio.MVC.ViewModels.ClienteViewModel>
+
+@{
+    ViewBag.Title = "Buscar";
+}
+
+
+
+<h3>Busca por cliente</h3>
+<hr />
+
+@using (Html.BeginForm())
+{
+            <!-- Text input-->
+
+    <div class="col-md-3" class="form-group">
+
+        <label class="col-md-4 control-label" for="documento">Documento</label>
+
+        <div class="col-md-12">
+
+            <input id="documento" name="documento" placeholder="Documento" class="form-control input-md" type="text">
+
+        </div>
+
+    </div>
+
+            <!-- Text input-->
+
+    <div class="col-md-3" class="form-group">
+
+        <label class="col-md-4 control-label" for="nome">Nome</label>
+
+        <div class="col-md-12">
+
+            <input id="name" name="name" placeholder="Nome/Fantasia" class="form-control input-md" type="text">
+
+        </div>
+
+    </div>
+
+            <!-- Text input-->
+
+            <div class="col-md-3" class="form-group">
+
+                <label class="col-md-4 control-label" for="razao">R.Social</label>
+
+                <div class="col-md-12">
+
+                    <input id="razaoSocial" name="razaoSocial" placeholder="Razão social" class="form-control input-md" type="text">
+
+                </div>
+
+            </div>
+
+
+            <!-- Text input-->
+
+            <div class="col-md-3" class="form-group">
+
+                <label class="col-md-4 control-label" for="Id">Cidade</label>
+
+                <div class="col-md-12">
+
+                    <input id="cidade" name="cidade" placeholder="cidade" class="form-control input-md" type="text">
+
+                </div>
+
+            </div>
+
+        <!-- Button -->
+
+            <div class="botao" class="form-group">
+                <button type="submit" id="pesqCliente" name="Pesquisar" value="vizualizar" class="btn btn-primary"> Pesquisar  </button>
+            </div>
+
+
+}
+@if (Model != null)
+{
+
+    <div class="table-responsive">
+        <table class="table" id="tabClie">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Documento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RazaoSocial)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cidade)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ativo)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Documento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RazaoSocial)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cidade)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ativo)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.ClienteId }, new { @class = "btn btn-primary btn-xs" })
+                        @Html.ActionLink("Detalhes", "Details", new { id = item.ClienteId }, new { @class = "btn btn-success btn-xs" })
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+}

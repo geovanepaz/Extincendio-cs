@@ -1,0 +1,72 @@
+﻿@model Extincendio.MVC.ViewModels.ProdutoViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgenteExtintor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgenteExtintor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CapacidadeExtintora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CapacidadeExtintora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carga)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carga)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValidadeSelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValidadeSelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataReteste)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataReteste)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valorUnitario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valorUnitario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProdutoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
